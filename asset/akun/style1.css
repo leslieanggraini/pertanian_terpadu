@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(sawah.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-position: center;
+	font-family: century gothic;
+}
+
+.box{
+	width: 320px;
+	height: 510px;
+	background: rgba(0,0,0,0.7);
+	color: #ffffff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box; 
+	padding: 30px 30px;
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 25px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	text-align: left;
+}
+
+.box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.box input[type="text"],[type="password"],[type="email"]
+{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.box button[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #b22222;
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.box button[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #2e8b57;
+	color: #ffffff;
+}
+
+.box a{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color : #a9a9a9;
+}
+
+.box a:hover{
+	cursor: pointer;
+	color : #b0e0e6;
+}
