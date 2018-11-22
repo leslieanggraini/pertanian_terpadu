@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url(sawah.jpg)no-repeat 50% 50%;
+	background-size: cover;
+	background-position: center;
+	font-family: century gothic;
+	height: 59vh;
+}
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(sawah.jpg) no-repeat 50% 50%;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(sawah.jpg) no-repeat;
+      background-size: cover;
+}
+ul{
+	float: left;
+	list-style-type: none;
+	margin: 4px;
+}
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+ul li{
+	text-align: right;
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border:1px solid transparent;
+	font-size: 20px;
+	transition: .6s ease;
+}
+ul li a:hover{
+	background-color: #e6f972;
+	color: #000;
+	opacity: .8;
+}
+ul li.active a{
+	background-color: #e6f972;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 160px;
+}
+.title{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+.main{
+	max-width: 1000px;
+	margin:auto;
+	margin-top: 10px;
+}
+
+.content {
+      width: 100%;
+      margin: 2em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+     
+}
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+.search{
+	position: absolute;
+	right: 5%;
+	top: 35%;
+	transform: translate(-10%,-60%);
+	height: 30px;
+	border-radius: 20px;
+	padding: 10px;
+	opacity: .7;
+}
+
+.container{
+	position: relative;
+	height: 400px;
+	margin: 20px auto;
+	text-align: right;
+}
+.container .box{
+	position: relative;
+	width: calc(500px - 30px);
+	height: calc(400px - 30px);
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.container .box#b1{
+	background: url(image/kelapa1.jpeg);
+}
+.container .box#b2{
+	background: url(image/padi.jpg);
+}
+.container .box#b3{
+	background: url(image/taman.jpg);
+}
+.container .box .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+
+}
+.container .box .icon#l1{
+	background: url(image/kelapa1.jpeg);
+	background-size: 150% 100%;
+}
+.container .box .icon#l2{
+	background: url(image/padi.jpg);
+	background-size: 150% 100%;
+}
+.container .box .icon#l3{
+	background: url(image/taman.jpg);
+	background-size: 150% 100%;
+}
+
+.container .box:hover .icon{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .konten{
+	position: absolute;
+	top: 130%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.container .box:hover .konten{
+	top: 130px;
+}
+.container .box .konten h3{
+	margin:0;
+	padding: 0;
+	color: white;
+	font-size: 30px;
+}
+.container .box .konten h3#p1{
+	color: black;
+}
+.container .box .konten p{
+	margin:0;
+	padding: 0;
+	color: white;
+	font-size: 24px;
+}
+.container .box .konten p#p1{
+	color: black;
+}
+.navigasi{
+	width: 100%;
+	background:black;
+	height: 80px;
+	opacity: .7;
+	top: 0;	
+	position: fixed;
+	z-index: 100;
+}
+.search input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.search button[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fff;
+	color: black;
+	font-size: 18px;
+	border-radius: 10px;
+}
