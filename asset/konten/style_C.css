@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: century gothic;
+	height: 59vh;
+}
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(sawah.jpg) no-repeat 50% 50%;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(sawah.jpg) no-repeat;
+      background-size: cover;
+}
+nav div div ul{
+	float: left;
+	list-style-type: none;
+	margin: 4px;
+}
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+nav div div ul li{
+	text-align: right;
+	display: inline-block;
+}
+nav div div ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border:1px solid transparent;
+	font-size: 20px;
+	transition: .6s ease;
+}
+nav div div ul li a:hover{
+	background-color: #e6f972;
+	color: #000;
+	opacity: .8;
+}
+nav div div ul li.active a{
+	background-color: #e6f972;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 160px;
+}
+.logo img:hover{
+	cursor: pointer;
+}
+.title{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #fff;
+	font-size: 40px;
+}
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;   
+}
+.container{
+	position: relative;
+	width: 1400px;
+	height: 400px;
+	margin: 20px auto;
+}
+.container .box{
+	position: relative;
+	width: calc(500px - 30px);
+	height: calc(400px - 30px);
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.container .box#b1{
+	background: url(image/kelapa1.jpeg);
+}
+.container .box#b2{
+	background: url(image/padi.jpg);
+}
+.container .box#b3{
+	background: url(image/taman.jpg);
+}
+.container .box .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: 1;
+}
+.container .box .icon#l1{
+	background: url(image/kelapa1.jpeg);
+	background-size: 117%;
+}
+.container .box .icon#l2{
+	background: url(image/padi.jpg);
+	background-size: 127%;
+}
+.container .box .icon#l3{
+	background: url(image/taman.jpg);
+	background-size: 127%;
+}
+
+.container .box:hover .icon{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .konten{
+	position: absolute;
+	top: 130%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.container .box:hover .konten{
+	top: 130px;
+}
+.container .box .konten h3{
+	margin:0;
+	padding: 0;
+	color: white;
+	font-size: 30px;
+}
+.container .box .konten h3#p1{
+	color: black;
+}
+.container .box .konten p{
+	margin:0;
+	padding: 0;
+	color: white;
+	font-size: 24px;
+}
+.container .box .konten p#p1{
+	color: black;
+}
+section.courses {
+	float: left;
+	width: 900px;
+	border-right: 1px solid #eeeeee;}
+article {
+	clear: both;
+	overflow: auto;
+	width: 100%;
+}
+article:hover{
+	color: #985d6a;
+	background-color: #efefef;
+}
+hgroup {
+	margin-top: 40px;
+}
+figure {
+	float: left;
+	width: 290px;
+	height: 250px;
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid #eeeeee;
+}
+figcaption {
+	font-size: 50%;
+	text-align: left;
+}
+aside {
+	width: 320px;
+	float: right;
+	padding: 0px 30px 10px 0px;
+}
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+	font-size: 12px;
+}
+aside section a:hover {
+	color: #985d6a;
+	background-color: #efefef;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+h2, h3 {
+	font-weight: normal;
+}
+h2 {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+h3 {
+	margin: 0px 0px 10px 0px;
+	color: #b8860b;
+}
+aside h2 {
+	padding: 30px 0px 10px 0px;
+}
+
+.btn button[type= "submit"]{
+	width: 100%;
+	background: tosca;
+	border: 2px solid #30b1a6;
+	color: black;
+	padding: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 12px 0;
+	border-radius: 10px;
+}
+.search input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.search button[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fff;
+	color: black;
+	font-size: 18px;
+	border-radius: 10px;
+}
+.search{
+	position: absolute;
+	right: 5%;
+	top: 35%;
+	transform: translate(-10%,-60%);
+	height: 30px;
+	border-radius: 20px;
+	padding: 10px;
+	opacity: .7;
+}
+.main{
+	max-width: 1000px;
+	margin:auto;
+	margin-top: 10px;
+}
+.navigasi{
+	width: 100%;
+	background:black;
+	height: 80px;
+	top: 0;
+	opacity: .7;
+	position: fixed;
+	z-index: 100;
+}
